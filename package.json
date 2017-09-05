@@ -1,0 +1,36 @@
+{
+  "name": "dating-app",
+  "version": "1.0.0",
+  "description": "dating app",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnware15/dating-app.git"
+  },
+  "author": "johnware15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnware15/dating-app/issues"
+  },
+  "homepage": "https://github.com/johnware15/dating-app#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "cookie-session": "^1.3.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "nodemon": "^1.12.0",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.5.0"
+  }
+}
