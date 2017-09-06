@@ -3,8 +3,8 @@ CREATE DATABASE dating_app;
 
 \c dating_app
 
-CREATE TABLE "users" (
-"user_id"  SERIAL NOT NULL,
+CREATE TABLE "daters" (
+"dater_id"  SERIAL NOT NULL,
 "email" VARCHAR NOT NULL,
 "password" VARCHAR(250) NOT NULL,
 "face_image" VARCHAR(250) NOT NULL,
@@ -17,10 +17,10 @@ PRIMARY KEY ("user_id")
 );
 
 CREATE TABLE "crush" (
-"user_id" SERIAL NOT NULL,
+"dater_id" SERIAL NOT NULL,
 "fan_ids" VARCHAR NOT NULL,
 "crush_ids" VARCHAR NOT NULL,
-PRIMARY KEY ("user_id")
+PRIMARY KEY ("dater_id")
 );
 
-ALTER TABLE "crush" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("user_id");
+ALTER TABLE "crush" ADD FOREIGN KEY ("dater_id") REFERENCES "daters" ("dater_id");
